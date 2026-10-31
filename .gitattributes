@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.xmind binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary

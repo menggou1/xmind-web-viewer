@@ -1,0 +1,40 @@
+{
+  "name": "xmind-web-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A modern, interactive Xmind viewer with GitHub Pages hosting, image support, summaries, and left-to-right mind map navigation.",
+  "scripts": {
+    "dev": "npm run content && vite --host 127.0.0.1",
+    "content": "tsx scripts/build-index.ts",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "npm run content && npm run check && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@xyflow/react": "12.12.0",
+    "fast-xml-parser": "5.11.2",
+    "lucide-react": "1.66.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sharp": "0.35.5",
+    "yauzl": "3.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/yauzl": "3.4.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}
