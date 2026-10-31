@@ -224,7 +224,7 @@ describe("18 份真实文件与重命名完整性", () => {
           Object.keys(map.sheets[0].topics).length,
           map.sheets[0].summaries.length,
         ]).toEqual([334, 7]);
-      if (record.to.includes("第二章（考研）"))
+      if (record.to.includes("第二章微生物主要类群及形态结构"))
         expect(Object.keys(map.sheets[0].topics)).toHaveLength(367);
     }
     expect([count, images, summaries]).toEqual([3465, 15, 53]);
